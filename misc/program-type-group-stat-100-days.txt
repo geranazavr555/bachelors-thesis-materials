@@ -1,0 +1,18 @@
+C++				11020882
+Python 3		  984533
+Java			  376252
+C				  307082
+C#				   38644
+Pascal			   20444
+Rust			   11866
+Go				   11587
+Python 2 		   11220
+JavaScript		   13845
+Kotlin			   10828
+PHP				    4713
+Haskell			    1845
+Ruby			    1424
+D				    1264
+Perl			     443
+Scala			     405
+Ocaml			     165

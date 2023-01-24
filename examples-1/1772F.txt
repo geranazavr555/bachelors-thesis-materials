@@ -1,0 +1,28 @@
+# https://codeforces.com/problemset/problem/1772/F
+
+picture(n{int32}, m{int32}) {
+	[
+		s_i{string, s_i_j \in {'0', '1'}}{j: 1..m}
+	]{i: 1..n}	
+}
+
+input {
+	n{int32, 3 <= n <= 30} m{int32, 3 <= m <= 30} k{int32, 0 <= k <= 100}\n\n
+	[picture(n, m)]{i: 1..k + 1, sep='\n\n'}
+}
+
+output {
+	startPicIndex{int32, 1 <= startPicIndex <= k + 1}\n
+	q{uint32}\n
+	[
+		op_j{int32, op_j \in {1, 2}}
+		\if{op_j == 1}{
+			x_j{int32, 2 <= x_j <= n - 1} y_j{int32, 2 <= y_j <= m - 1}
+			# todo: assert "it should be surrounded by four cells of opposite color to itself"
+		}
+		\else{
+			i_j{int32, 1 <= i_j <= k + 1}
+			# todo: assert "picture with index the i should be equal to the current picture"
+		}
+	]{j: 1..q, sep='\n'}
+}

@@ -1,0 +1,18 @@
+# https://codeforces.com/problemset/problem/1768/B
+
+testcase {
+	n{int32, 2 <= n <= 10^5} k{int32, 1 <= k <= n}\n
+	[p_i{int32, 1 <= p_i <= n}]{i: 1..n, sep=' '}
+	# todo: assert that p is a permutation
+	# todo: assert that sum n <= 10^5
+}
+
+
+input {
+	t{int32, 1 <= t <= 10^4}\n
+	[testcase_i]{i: 1..t, sep='\n'}
+}
+
+output {
+	[minOp{int32}]{i: 1..t, sep='\n'}
+}

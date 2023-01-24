@@ -1,0 +1,25 @@
+# https://codeforces.com/problemset/problem/1779/E
+
+protocol {
+	n{int32, 3 <= n <= 250}\n
+	[interaction]{i: 1..2 * n}
+}
+
+interaction {
+	output {
+		op{char, op \in {'!', '?'}}
+		\if{op == '?'}{
+			makeSession
+		}
+		\else {
+			
+		}
+		\n
+	}
+}
+
+makeSession {
+	i{int32, 1 <= i <= n}
+	s{string, s_j \in {'0', '1'}, s_i == '0'}{j: 1..n}
+	# todo: assert count(s_j == '1') >= 1
+}

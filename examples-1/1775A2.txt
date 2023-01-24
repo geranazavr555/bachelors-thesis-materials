@@ -1,0 +1,16 @@
+# https://codeforces.com/problemset/problem/1775/A2
+
+testcase {
+	s{string, s_i \in {'a', 'b'}}{i: 1..2 * 10^5}
+	# todo assert that \sum |s| <= 4 * 10^5
+}
+
+input {
+	t{int32, 1 <= t <= 10^4}\n
+	testcases(t)
+}
+
+testcaseOutput {
+	a{string} b{string} c{string}
+	\assert{concat(a, b, c) == s, a <= b and c <= b or b <= a and b <= c}
+}

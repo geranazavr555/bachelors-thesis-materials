@@ -1,0 +1,15 @@
+# https://codeforces.com/problemset/problem/1774/F2
+
+input {
+	n{int32, 1 <= n <= 8 * 10^5}\n
+	[
+		op_i{int32, op_i \in {1, 2, 3}}
+		\if{op_i < 3}{
+			x_i{int32, 1 <= x_i <= 10^9}
+		}
+	]{i: 1..n, sep='\n'}
+}
+
+output {
+	alive{uint32, alive < 998'244'353}
+}
