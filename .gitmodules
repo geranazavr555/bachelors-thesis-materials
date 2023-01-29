@@ -1,0 +1,3 @@
+[submodule "thesis/style"]
+	path = thesis/style
+	url = git@github.com:mbuzdalov/latex-styles.git
