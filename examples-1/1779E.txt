@@ -1,3 +1,4 @@
+# TODO: not completed
 # https://codeforces.com/problemset/problem/1779/E
 
 protocol {
