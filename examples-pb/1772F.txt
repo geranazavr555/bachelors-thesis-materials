@@ -1,11 +1,11 @@
 // https://codeforces.com/problemset/problem/1772/F
 
-mapper string<n> to int32[n] m(s) {
-    # some code
+mapper string<n> maps int32[n] m(s) {
+    // some code
 }
 
 struct picture_line {
-    string<n> fake int32[n] mapper m line;
+    string<n> mapper m line;
     eoln;
 }
 
@@ -22,7 +22,7 @@ struct input {
     picture[k + 1] pictures;
 }
 
-enum operation_type mapped by int32 {
+enum operation_type maps int32 {
     PAINT = 1;
     COPY = 2;
 }
@@ -35,7 +35,7 @@ struct operation {
     eoln;
 }
 
-output {
+struct output {
     int32 start_pic_index;
     eoln;
     int32 q;

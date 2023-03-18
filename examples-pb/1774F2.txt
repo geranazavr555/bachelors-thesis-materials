@@ -1,6 +1,6 @@
 // https://codeforces.com/problemset/problem/1774/F2
 
-enum operation_id mapped by int32 {
+enum operation_id maps int32 {
     CREATE = 1;
     DECREASE = 2;
     REPEAT_ALL = 3;

@@ -1,0 +1,14 @@
+# https://codeforces.com/problemset/problem/1768/B
+
+testcase {
+    n: int32;
+    k: int32;
+    eoln;
+    p: int32[i=1..n, sep=' '];
+}
+
+input {
+    t: int32;
+    eoln;
+    testcases: testcase[i=1..t, sep='\n'];
+}

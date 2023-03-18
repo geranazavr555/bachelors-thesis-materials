@@ -1,0 +1,21 @@
+# https://codeforces.com/problemset/problem/1775/A2
+
+testcase {
+    s: string;
+}
+
+input {
+    t: int32;
+    eoln;
+    testcases: testcase[i=1..t, sep='\n'];
+}
+
+testcaseOutput {
+    a: string;
+    b: string;
+    c: string;
+}
+
+output {
+    testcaseOutputs: testcaseOutput[i=1..t, sep='\n'];
+}

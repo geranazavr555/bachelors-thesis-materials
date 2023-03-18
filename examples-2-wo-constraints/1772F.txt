@@ -1,0 +1,29 @@
+# https://codeforces.com/problemset/problem/1772/F
+
+picture (n: int32, m: int32) {
+    s: string[i=1..n, sep='\n'] | len(s[i]) = m;
+}
+
+input {
+    n: int32;
+    m: int32;
+    k: int32;
+    eoln;
+
+    pictures: picture(n, m)[i=1..n, sep='\n\n']
+}
+
+output {
+    startPicIndex: int32;
+    eoln;
+    q: uint32;
+    eoln;
+    ops: array[j=1..q, sep='\n'] of {
+        if (ops[j] == 1) {
+            x: int32;
+            y: int32;
+        } else {
+            i: int32;
+        }
+    };
+}

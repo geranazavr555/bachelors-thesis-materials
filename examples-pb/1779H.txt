@@ -6,11 +6,11 @@ struct input {
     int64[n] s;
 }
 
-mapper string<n> to bool[n] m(s) {
-    # some code
+mapper string<n> maps bool[n] m(s) {
+    // some code
 
-}   
+}
 
 struct output {
-    string<n> fake bool[n] mapper m result;
+    string<n> mapper m result;
 }

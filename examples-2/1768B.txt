@@ -1,0 +1,14 @@
+# https://codeforces.com/problemset/problem/1768/B
+
+testcase {
+    n: int32 | 2 <= n <= 10^5;
+    k: int32 | 1 <= k <= n;
+    eoln;
+    p: int32[i=1..n, sep=' '] | 1 <= p[i] <= n;
+}
+
+input {
+    t: int32 | 1 <= t <= 10^4;
+    eoln;
+    testcases: testcase[i=1..t, sep='\n'];
+}

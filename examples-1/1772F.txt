@@ -1,9 +1,7 @@
-# https://codeforces.com/problemset/problem/1772/F
-
 picture(n{int32}, m{int32}) {
 	[
 		s_i{string, s_i_j \in {'0', '1'}}{j: 1..m}
-	]{i: 1..n}	
+	]{i: 1..n, sep='\n'}
 }
 
 input {

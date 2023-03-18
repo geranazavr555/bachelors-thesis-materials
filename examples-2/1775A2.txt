@@ -1,0 +1,21 @@
+# https://codeforces.com/problemset/problem/1775/A2
+
+testcase {
+    s: string | 1 <= len(s) <= 2 * 10^5;
+}
+
+input {
+    t: int32 | 1 <= t <= 10^4;
+    eoln;
+    testcases: testcase[i=1..t, sep='\n'];
+}
+
+testcaseOutput {
+    a: string;
+    b: string;
+    c: string;
+}
+
+output {
+    testcaseOutputs: testcaseOutput[i=1..t, sep='\n'];
+}
