@@ -1,7 +1,7 @@
 # https://codeforces.com/problemset/problem/1772/F
 
 picture (n: int32, m: int32) {
-    s: string[i=1..n, sep='\n'] | len(s[i]) = m && s[i] matches /(01)+/ #forall{j=1..m}(s[i][j] in ['0', '1']);
+    s: string[i=1..n, sep='\n'] | len(s[i]) == m && s[i] matches /(01)+/ #forall{j=1..m}(s[i][j] in ['0', '1']);
 }
 
 input {
@@ -10,7 +10,7 @@ input {
     k: int32 | 0 <= k <= 100;
     eoln;
 
-    pictures: picture(n, m)[i=1..n, sep='\n\n']
+    pictures: picture(n, m)[i=1..n, sep="\n\n"];
 }
 
 output {
@@ -18,12 +18,13 @@ output {
     eoln;
     q: uint32 | 0 <= q <= 10^7;
     eoln;
-    ops: array[j=1..q, sep='\n'] of (
-        if (ops[j] == 1) {
+    ops: array[j=1..q, sep='\n'] of {
+        op: int32;
+        if (op == 1) {
             x: int32 | 2 <= x <= n - 1;
             y: int32 | 2 <= y <= m - 1;
         } else {
             i: int32 | 1 <= i <= k + 1;
         }
-    );
+    };
 }

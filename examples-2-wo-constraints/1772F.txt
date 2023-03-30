@@ -1,7 +1,7 @@
 # https://codeforces.com/problemset/problem/1772/F
 
 picture (n: int32, m: int32) {
-    s: string[i=1..n, sep='\n'] | len(s[i]) = m;
+    s: string[i=1..n, sep='\n'] | len(s[i]) == m;
 }
 
 input {
@@ -10,8 +10,10 @@ input {
     k: int32;
     eoln;
 
-    pictures: picture(n, m)[i=1..n, sep='\n\n']
+    pictures: picture(n, m)[i=1..n, sep="\n\n"];
 }
+
+# n, m, x, y, picture(n, m) ??? picture(x, y)
 
 output {
     startPicIndex: int32;
@@ -19,7 +21,8 @@ output {
     q: uint32;
     eoln;
     ops: array[j=1..q, sep='\n'] of {
-        if (ops[j] == 1) {
+        op: int32;
+        if (op == 1) {
             x: int32;
             y: int32;
         } else {
