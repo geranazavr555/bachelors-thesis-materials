@@ -1,1 +1,0 @@
-cmd /c dir /b | findstr .txt | findstr /V list > list.txt
