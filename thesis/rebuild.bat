@@ -1,2 +1,2 @@
 call clear.bat
-call build.bat
+call build-preview.bat

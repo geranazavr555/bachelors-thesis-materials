@@ -4,7 +4,8 @@ del *.bcf
 del *.bib
 del *.blg
 del *.log
-del *.pdf
+rem del *.pdf
+del bachelor-thesis.pdf
 del *.xml
 del *.tct
 del *.toc
